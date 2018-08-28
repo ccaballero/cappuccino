@@ -25,9 +25,9 @@ pdftex]{hyperref}
 \begin{document}
 \maketitle
 \section{Introducción}
-En este documento se plantea el desarrollo de una aplicación web y su version
-movil que permita acelerar y mejorar el proceso de seleccion de horarios de
-grupos y materias en la facultad de ciencias y tecnologia.
+En este documento se plantea el desarrollo de una aplicación web y su versión
+móvil que permita acelerar y mejorar el proceso de selección de horarios de
+grupos y materias en la facultad de ciencias y tecnología.
 
 \section{Antecedentes}
 Cada semestre en la facultad de ciencias y tecnología, se pasa por un proceso
@@ -36,7 +36,7 @@ websiss.
 
 En semestres bajos e intermedios, el proceso de seleccionar las materias que uno
 va a tomar para el semestre, posee un gran esfuerzo de análisis, para que todas
-estas materias no colisionen, y que ademas (si se puede), posean características
+estas materias no colisionen, y que además (si se puede), posean características
 que le convengan al estudiante, según sus propios criterios y disponibilidades
 de tiempo.
 
@@ -46,56 +46,56 @@ En este proceso, se toman en cuenta muchas cosas entre otras:
 \item Minimizar las colisiones entre horarios.
 \item Preferencia por un grupo en especifico.
 \item Reducción de los puentes entre clases.
-\item Restringir segun los tiempos de disponibilidad que se posee.
+\item Restringir según los tiempos de disponibilidad que se posee.
 \end{itemize}
 
 Todo esto concluye a realizar de este proceso, un trabajo moroso y hasta
 cierto punto agobiante, particularmente cuando se tienen muchas posibilidades.
 
 \section{Definición del problema}
-Se ha vivido y observado que el proceso de inscripcion en la facultad de
-ciencias y tecnologia, realizado dos veces por año presenta algunos
+Se ha vivido y observado que el proceso de inscripción en la facultad de
+ciencias y tecnología, realizado dos veces por año presenta algunos
 inconvenientes particularmente para aquellos estudiantes de nuevo ingreso o
 aquellos que toman una gran cantidad de materias, entre los problemas se
 destacan los siguientes:
 
-Los horarios se publican con poca antelacion y con un procedimiento poco
-flexible, lo que conlleva un proceso tedioso y una inversion considerable de
+Los horarios se publican con poca antelación y con un procedimiento poco
+flexible, lo que conlleva un proceso tedioso y una inversión considerable de
 tiempo.
 
 Los estudiantes representan un conjunto muy variado de restricciones y
-condiciones en la toma de decision acerca de que grupos y materias requieren
+condiciones en la toma de decisión acerca de que grupos y materias requieren
 tomar, haciendo del proceso aun mas laborioso.
 
 Algunos estudiantes requieren conformar grupos en sus materias lo que
-requiere coordinacion entre multiples estudiantes y un monitoreo constante de la
+requiere coordinación entre múltiples estudiantes y un monitoreo constante de la
 disponibilidad.
 
-Posteriormente al proceso de inscripcion tambien se necesita revisar los
+Posteriormente al proceso de inscripción también se necesita revisar los
 horarios seleccionados mientras el estudiante se acostumbre a este.
 
 Por lo mencionado se define el problema como:
 
 \emph{“El proceso de inscripción estudiantil de la facultad de ciencias y 
-tecnologia se realiza de forma tediosa, manual, y con tendencia a la
+tecnología se realiza de forma tediosa, manual, y con tendencia a la
 ineficiencia.”}
 
 \section{Objetivos}
 
 \subsection{Objetivo General}
-Facilitar el proceso de eleccion de horarios en tiempo de inscripción a los
-estudiantes de la facultad de ciencias y tecnologia, a traves del desarrollo de
-una aplicacion web y su version movil para la organizacion de las materias.
+Facilitar el proceso de elección de horarios en tiempo de inscripción a los
+estudiantes de la facultad de ciencias y tecnología, a través del desarrollo de
+una aplicación web y su versión móvil para la organización de las materias.
 
 \subsection{Objetivos Específicos}
 \begin{itemize}
-\item Realizar la notificacion de los eventos del proceso de inscripción y
-    mejorar la accesibilidad a la informacion.
+\item Realizar la notificación de los eventos del proceso de inscripción y
+    mejorar la accesibilidad a la información.
 \item Crear un sistema de reglas que permita validar las restricciones que el
     estudiante establezca.
 \item Facilitar de espacios de comunicación y coordinación entre los estudiantes
     durante el proceso de inscripción.
-\item Persisir la información del horario del estudiante para que esta pueda ser
+\item Persistir la información del horario del estudiante para que esta pueda ser
     utilizado a modo de consulta.
 \end{itemize}
 
@@ -111,41 +111,41 @@ Véase el cuadro \ref{ingenieriadeproyecto} en la página
 Objetivo General & Causa & Objetivos Específicos & Actividades & Resultados \\
 \hline
 \multirow{12}{2.6cm}{Facilitar el proceso de elección de horarios en tiempo de
-inscripción a los estudiantes de la facultad de ciencias y tecnologia, a traves
-del desarrollo de una aplicación web y su version movil para la organización de
+inscripción a los estudiantes de la facultad de ciencias y tecnología, a través
+del desarrollo de una aplicación web y su versión móvil para la organización de
 las materias.} &
 \multirow{3}{3cm}{Los horarios se publican con poca antelación y con un
 procedimiento poco flexible.} &
-\multirow{3}{3.5cm}{Realizar la notificacion de los eventos del proceso de
-inscripción y mejorar la accesibilidad a la informacion.} &
+\multirow{3}{3.5cm}{Realizar la notificación de los eventos del proceso de
+inscripción y mejorar la accesibilidad a la información.} &
 Diseñar e implementar un sistema de notificación en tiempo real sobre eventos
 del proceso de inscripción. &
-\multirow{3}{2.5cm}{Modulo de notificacion de eventos.} \\
+\multirow{3}{2.5cm}{Modulo de notificación de eventos.} \\
 \cline{4-4}
 & & & Diseñar e implementar un extractor de información de los horarios durante
 el proceso de inscripción. & \\
 \cline{4-4}
 & & & Diseñar e implementar el API de comunicación del sistema desarrollado.& \\
 \cline{2-5}
-& \multirow{3}{3cm}{Se presentan multiples restricciones y condiciones en la
+& \multirow{3}{3cm}{Se presentan múltiples restricciones y condiciones en la
 toma de decisiones.} &
 \multirow{3}{3.5cm}{Crear un sistema de reglas que permita validar las
 restricciones que el estudiante establezca.} &
-Analizar los metodos posibles para el diseño del sistema de control de
+Analizar los métodos posibles para el diseño del sistema de control de
 restricciones. &
 \multirow{3}{2.5cm}{Modulo para el control de restricciones.} \\
 \cline{4-4}
 & & & Diseñar e implementar un sistema para el registro de restricciones
 horarias y sus ponderaciones de valor. & \\
 \cline{4-4}
-& & & Diseñar e implementar la validacion de restricciones sobre los horarios
+& & & Diseñar e implementar la validación de restricciones sobre los horarios
 disponibles. & \\
 \cline{2-5}
 & \multirow{3}{3cm}{Se requiere coordinación y un monitoreo constante entre
 estudiantes y la disponibilidad de los grupos.} &
 \multirow{3}{3.5cm}{Facilitar de espacios de comunicación y coordinación entre
 los estudiantes durante el proceso de inscripción.} &
-Crear espacios virtuales para la discusion entre usuarios durante el proceso de
+Crear espacios virtuales para la discusión entre usuarios durante el proceso de
 inscripción. &
 \multirow{3}{2.5cm}{Modulo de conectividad entre usuarios del sistema.} \\
 \cline{4-4}
@@ -155,7 +155,7 @@ inscripción. &
 \cline{2-5}
 & \multirow{3}{3cm}{Se necesita tener disponible los horarios finalmente
 seleccionados para su consulta durante el periodo de clases.} &
-\multirow{3}{3.5cm}{Persisir la información del horario del estudiante para que
+\multirow{3}{3.5cm}{Persistir la información del horario del estudiante para que
 esta pueda ser utilizado a modo de consulta.} &
 Modelar un proceso de intercambio de información basado en servicios web en el
 sistema. &
@@ -165,7 +165,7 @@ clases.} \\
 & & & Implementar estándares de servicios web en el sistema. & \\
 \cline{4-4}
 & & & Diseñar e implementar persistencia de la información sobre el dispositivo
-movil. & \\
+móvil. & \\
 \hline
 \end{tabular}
 \caption{Ingeniería de proyecto}
@@ -185,7 +185,7 @@ desventajas que pueden encontrar en el camino a sus objetivos.
 \section{Innovación tecnológica}
 Se plantea utilizar la tecnología provista por node.js, para desarrollar en el
 lenguaje de programación Javascript, tanto en su backend como en su frontend,
-ademas de hacer uso del framework ionic para la construccion de la version movil
+además de hacer uso del framework ionic para la construcción de la versión móvil
 del sistema.
 
 Así también se pretende utilizar toda la estructura provista por
@@ -193,13 +193,13 @@ REST\footnote{Representational State Transfer (REST): Técnica de arquitectura
 software para sistemas hipermedia distribuidos como la World Wide Web.} para la
 implementación de servicios, tanto para provisión como consumo de recursos web.
 
-Ademas se facilitara la implementación del sistema sobre cualquier
-infraestructura con la herramienta docker para virtualizacion ligera.
+Además se facilitara la implementación del sistema sobre cualquier
+infraestructura con la herramienta docker para virtualización ligera.
 
 \section{Alcance}
-El desarrollo de este sistema considera la construccion de los servicios,
+El desarrollo de este sistema considera la construcción de los servicios,
 notificaciones de eventos por el lado del servidor, es decir el backend del
-sistema; la construcción de la aplicacion web, y la aplicacion movil hibrida
+sistema; la construcción de la aplicación web, y la aplicación móvil híbrida
 como parte del frontend del sistema.
 
 \end{document}
